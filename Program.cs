@@ -61,10 +61,10 @@ namespace GenerateContext
             Console.WriteLine("1 - O Contexto representa a entidade ou context ao qual o UseCase pertence. Ex: Person, Proposal, Quote. \n");
             Console.WriteLine("----------------------------------------------------------------------------------------");
             Console.WriteLine("2 - Ao digitar o UseCase, você tem as seguintes opções: \n");
-            Console.WriteLine("GetPersonById -t (Criar sem o arquivo de Request, incluirá um Guid no local)");
+            Console.WriteLine("GetPersonById -r (Criar sem o arquivo de Request, incluirá um Guid no local)");
             Console.WriteLine("GetPersonById -s (Criar sem o arquivo de Response, incluirá um Guid no local)");
             Console.WriteLine("GetPersonById --v (Criar COM o arquivo de Validator)\n");
-            Console.WriteLine("As tags podem ser usadas em conjunto, por exemplo: GetPersonById -t -s --v");
+            Console.WriteLine("As tags podem ser usadas em conjunto, por exemplo: GetPersonById -r -s --v");
             Console.WriteLine("----------------------------------------------------------------------------------------");
         }
     }
