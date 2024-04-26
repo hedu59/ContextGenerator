@@ -16,12 +16,14 @@ namespace GenerateContext.Services
         public static string FindDirectory(string basePath, string directoryName)
         {
             string[] projectDirectories = Directory.GetDirectories(basePath, "*", SearchOption.AllDirectories);
+
             foreach (string directory in projectDirectories)
             {
-                Console.WriteLine(directory);
-                Console.WriteLine("----------------------------------------------------------------------------------");
                 if (directory.EndsWith(directoryName))
                 {
+                    Console.WriteLine("----------------------------------------------------------------------------------");
+                    Console.WriteLine(directory.Replace(basePath, ""));
+                    Console.WriteLine("----------------------------------------------------------------------------------");
                     return directory;
                 }
             }
